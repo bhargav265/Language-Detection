@@ -1,8 +1,8 @@
 ## Team
-Nikhil Thakur - MS CS
-Akshay Sharma - MS CS
-Bhargav Parsi - MS CS
-Shraddha Manchekar - MS CS
+Nikhil Thakur - MS CS <br />
+Akshay Sharma - MS CS <br />
+Bhargav Parsi - MS CS <br />
+Shraddha Manchekar - MS CS <br />
 
 ### Markdown
 
