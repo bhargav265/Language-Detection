@@ -4,34 +4,16 @@ Akshay Sharma - MS CS <br />
 Bhargav Parsi - MS CS <br />
 Shraddha Manchekar - MS CS <br />
 
-### Markdown
+## Abstract
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Introduction
 
-```markdown
-Syntax highlighted code block
+## N-gram Model
 
-# Header 1
-## Header 2
-### Header 3
+## Deep Neural Network Model
 
-- Bulleted
-- List
+## Results
 
-1. Numbered
-2. List
+## Conclusion
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bhargav265/LanguageDetection/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## References
