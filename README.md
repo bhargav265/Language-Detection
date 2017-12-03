@@ -61,7 +61,7 @@ After every layer we add a dropout which is a simple technique used to prevent o
 Below we can see that accuracy is increasing as the number of epochs increase, but after 1 epoch the rate of increase is not high for the test set.
 
 
-<img src="Images/accuracy_vs_epoch.PNG" width="500" align="middle">{: .center-image }
+<img src="Images/accuracy_vs_epoch.png" width="500" align="middle">{: .center-image }
 <center><b>Accuracy VS Epoch</b></center>
 <br>
 
