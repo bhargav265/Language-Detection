@@ -62,7 +62,6 @@ Below we can see that accuracy is increasing as the number of epochs increase, b
 
 
 <img src="Images/accuracy_vs_epoch.png" width="500" align="middle">{: .center-image }
-<<<<<<< HEAD
 <center><b>Accuracy VS Epoch</b></center>
 <br>
 
