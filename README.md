@@ -62,14 +62,20 @@ Below we can see that accuracy is increasing as the number of epochs increase, b
 
 
 <img src="Images/accuracy_vs_epoch.png" width="500" align="middle">{: .center-image }
-<<<<<<< HEAD
 <center><b>Accuracy VS Epoch</b></center>
 <br>
 
 Below we have given the loss vs epoch plot. We can similarly say that, after the 1st epoch, loss is not reduced much because the model already learned sufficient parameters to classify.
 
 <img src="Images/Loss_vs_epoch.png" width="500" align="middle">{: .center-image }
-<center><b>Accuracy VS Epoch</b></center>
+<center><b>Loss VS Epoch</b></center>
+<br>
+
+We show the prediction of sample sentences on various languages below.
+
+
+<img src="Images/testing.PNG" width="500" align="middle">{: .center-image }
+<center><b>Illustration of Test sentences</b></center>
 <br>
 
 
