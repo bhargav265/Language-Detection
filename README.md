@@ -1,16 +1,21 @@
 ## Team
-Nikhil Thakur - MS CS  - 804946345<br />
-Akshay Sharma - MS CS  - 504946035<br />
-Bhargav Parsi - MS CS  - 804945591<br />
-Shraddha Manchekar - MS CS  - 004945217<br />
+Nikhil Thakur - MS CS  - (804946345)<br />
+Akshay Sharma - MS CS  - (504946035)<br />
+Bhargav Parsi - MS CS  - (804945591)<br />
+Shraddha Manchekar - MS CS  - (004945217)<br />
+
+
 
 ## Abstract
 In natural language processing, language identification or language guessing is the problem of determining the language of the given content.
 There are several statistical approaches to language identification using different techniques to classify the data.
 
+
+
 ## Introduction
 In this project we have implemented 2 approaches to language identification. The first approach uses N-grams and the second uses deep neural network.
 The first approach has been implemented in Java and the second in Python. 
+
 
 
 ## N-gram Model
@@ -59,7 +64,7 @@ But of course, you have to take care of other factors too, viz overfitting, trai
 
 By comparing the two approaches, we conclude that deep neural network surpasses the N-gram approach for language detection in almost all aspects. With a decent GPU you could train the net in a short time and see the magic it does.
 
-For the N-gram approach, including the unigrams in the language profile too may help in correctly classifying even the short sentences in the data.
+For the N-gram approach, including the unigrams in the language profile too may help in correctly classifying even the short sentences in the data. Furthermore tuning the hyperparameters on a validation set may further bring an improvement in the accuracy. 
 
 
 
