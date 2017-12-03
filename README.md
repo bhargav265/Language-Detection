@@ -68,7 +68,7 @@ Below we can see that accuracy is increasing as the number of epochs increase, b
 Below we have given the loss vs epoch plot. We can similarly say that, after the 1st epoch, loss is not reduced much because the model already learned sufficient parameters to classify.
 
 <img src="Images/Loss_vs_epoch.png" width="500" align="middle">{: .center-image }
-<center><b>Accuracy VS Epoch</b></center>
+<center><b>Loss VS Epoch</b></center>
 <br>
 
 
