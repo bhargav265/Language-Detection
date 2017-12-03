@@ -1,3 +1,6 @@
+<style>
+{% include blogspots.css %}
+</style>
 ## Team
 Nikhil Thakur - MS CS  - 804946345<br />
 Akshay Sharma - MS CS  - 504946035<br />
@@ -42,7 +45,20 @@ Awesome, if you could increase the accuracy!!!!.
 
 ### Architecture of the Neural Network
 From the previous Section, we see that the model gets 132 features. Recalling that there are 1400000 training examples and 350000 testing examples, we input the training examples into the Deep NN. We used Keras with Tensorflow to achieve this task. <br />
-1. The first Layer has 132 Nodes 
+After every layer we add a dropout which is a simple technique used to prevent overfitting.
+1. The first Layer has 132 input nodes connected with 500 hidden layer nodes.
+2. Next we insert 300 hidden layer nodes.
+3. After that, another 100 hidden layer nodes.
+4. At last, We put 7 output layer nodes for each of the 7 classes. 
+
+<img src="Images/architecture.PNG" width="500" align="middle">{: .center-image }
+<center><b>Architecture using model.summary()</b></center>
+<br>
+
+
+### Results of DNN
+
+
 
 
 
