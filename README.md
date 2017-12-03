@@ -21,15 +21,16 @@ the language profiles for all the supported languages. The language profile is b
 
 
 
-Given below are the top 50 most frequent combination of bigrams and trigrams that we found from the training corpus.
+Given below are the top 50 most frequent combination of bigrams and trigrams for english language that we found from the training corpus.
 
 
 <strong>[of the, in the, to the, the european, on the, it is, the commission, that the, and the, for the, to be, ' s, with the, by the, european union, we are, like to, the european union, that we, is a, we have, member states, the council, in this, this is, i would, at the, is the, will be, is not, of this, i am, from the, there is, that is, of a, has been, of the european, which is, as a, would like, must be, do not, have been, we must, and i, should be, would like to, that it, european parliament]<strong>
 </strong>
 
 
+
 To reduce the computation we computed the language model for each language and serialized each one of them. Then, while testing we directly used them after deserializing.
-For preprocessing the text, tokenization etc. we used the Stanford CoreNlp library. You can find the full Java code on the Github page.
+For preprocessing the text, tokenization etc. we used the <a target="_blank" href = "https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNlp library </a>. You can find the full Java code on the Github page.
 
 
 ## Deep Neural Network Model
