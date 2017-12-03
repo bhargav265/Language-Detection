@@ -1,8 +1,8 @@
 ## Team
-Nikhil Thakur - MS CS <br />
-Akshay Sharma - MS CS <br />
-Bhargav Parsi - MS CS <br />
-Shraddha Manchekar - MS CS <br />
+Nikhil Thakur - MS CS  - 804946345<br />
+Akshay Sharma - MS CS  - 504946035<br />
+Bhargav Parsi - MS CS  - 804945591<br />
+Shraddha Manchekar - MS CS  - 004945217<br />
 
 ## Abstract
 In natural language processing, language identification or language guessing is the problem of determining the language of the given content.
@@ -29,10 +29,10 @@ Given below are the top 50 most frequent combination of bigrams and trigrams for
 
 
 
-To reduce the computation we computed the language model for each language and serialized each one of them. Then, while testing we directly used them after deserializing.
+To reduce the computation we computed the language profile for each language and serialized each one of them. Then, while testing we directly used them after deserializing.
 For preprocessing the text, tokenization etc. we used the <a target="_blank" href = "https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNlp library </a>. 
 
-You can find the full Java code on the Github page. Feel free to use your choice of parameters for generating the language models.
+You can find the full Java code on the Github page. Feel free to use your choice of parameters for generating the language profiles.
 Awesome, if you could increase the accuracy!!!!.
 
 
@@ -48,7 +48,7 @@ From the previous Section, we see that the model gets 132 features. Recalling th
 
 ## Results
 
-The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that the model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language model and made a mistake.
+The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that our prediction model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language profile and made a mistake.
 
 The deep neural network achieved an accuracy of 99%. This shows the exceptional capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
 But of course, you have to take care of other factors too, viz overfitting, train-test split etc...
@@ -59,7 +59,7 @@ But of course, you have to take care of other factors too, viz overfitting, trai
 
 By comparing the two approaches, we conclude that deep neural network surpasses the N-gram approach for language detection in almost all aspects. With a decent GPU you could train the net in a short time and see the magic it does.
 
-For the N-gram approach, maybe including the unigrams too may help in correctly classifying even the short sentences in the data.
+For the N-gram approach, including the unigrams in the language profile too may help in correctly classifying even the short sentences in the data.
 
 
 
@@ -67,7 +67,8 @@ For the N-gram approach, maybe including the unigrams too may help in correctly 
 
 1. Gyawali, Binod, Gabriela Ramírez-de-la-Rosa, and Thamar Solorio. "Native Language Identification: a Simple n-gram Based Approach." BEA@ NAACL-HLT. 2013.
 2. Carlos Ramisch. “N-gram models for language detection.”
-3. Kadri, Said, and Abdelouahab Moussaoui. "An effective method to recognize the language of a text in a collection of multilingual documents." Electronics, Computer and     	   Computation (ICECCO), 2013 International Conference on. IEEE, 2013.
-4. 
+3. http://cloudmark.github.io/Language-Detection/
+4. Kadri, Said, and Abdelouahab Moussaoui. "An effective method to recognize the language of a text in a collection of multilingual documents." Electronics, Computer and     	   Computation (ICECCO), 2013 International Conference on. IEEE, 2013.
+5. 
 
 
