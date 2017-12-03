@@ -17,7 +17,12 @@ The first approach has been implemented in Java and the second in Python.
 An n-gram is a contiguous sequence of n items from a given sequence of text or speech. It is an N-character slice of a longer string. Typically, the string is sliced into a set of overlapping N-grams.
 
 Given a novel document to be classified, the system computes the N-gram profile of this document (document profile) and compares the distance between this document profile and
-the language profiles for all the supported languages. The language profile is basically the top N of the list of bi-grams and tri-grams sorted by frequency. The top 300 or so N-grams are almost always highly correlated to the language. Thus, the language profile of a sporty document will be very similar to the language profile generated from a political document in the same language. This gives us confidence that if we train the system on the Declaration of Human Right we will still be able to classify documents to the correct language even though they might have completely different topics. Starting at around rank 300 or so, an N-gram frequency profile begins to become specific to the topic
+the language profiles for all the supported languages. The language profile is basically the top N of the list of bi-grams and tri-grams sorted by frequency. The top 300 or so N-grams are almost always highly correlated to the language. Thus, the language profile of a sporty document will be very similar to the language profile generated from a political document in the same language. This gives us confidence that if we train the system on the Declaration of Human Right we will still be able to classify documents to the correct language even though they might have completely different topics. Starting at around rank 300 or so, an N-gram frequency profile begins to become specific to the topic. For the training and testing we rook the data from <href = "http://www.statmt.org/europarl/">European Parliament Proceeding Parallel Corpus<href>
+
+
+Given below are the top 50 most frequent combination of bigrams and trigrams that we found from the training corpus.
+
+
 
 
 ## Deep Neural Network Model
