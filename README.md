@@ -30,7 +30,11 @@ Given below are the top 50 most frequent combination of bigrams and trigrams for
 
 
 To reduce the computation we computed the language model for each language and serialized each one of them. Then, while testing we directly used them after deserializing.
-For preprocessing the text, tokenization etc. we used the <a target="_blank" href = "https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNlp library </a>. You can find the full Java code on the Github page.
+For preprocessing the text, tokenization etc. we used the <a target="_blank" href = "https://stanfordnlp.github.io/CoreNLP/">Stanford CoreNlp library </a>. 
+
+You can find the full Java code on the Github page. Feel free to use your choice of parameters for generating the language models.
+Awesome, if you could increase the accuracy!!!!.
+
 
 
 ## Deep Neural Network Model
@@ -40,9 +44,17 @@ For preprocessing the text, tokenization etc. we used the <a target="_blank" hre
 From the previous Section, we see that the model gets 132 features. Recalling that there are 1400000 training examples and 350000 testing examples, we input the training examples into the Deep NN. We used Keras with Tensorflow to achieve this task. <br />
 1. The first Layer has 132 Nodes 
 
+
 ## Results
 
+The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that the model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language model and made a mistake. 
+
+The deep neural network achieved an accuracy of 99%. This shows the high capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
+But of course, you have to take care of other factors too, viz overfitting, train-test split etc...
+
+
 ## Conclusion
+
 
 ## References
 
