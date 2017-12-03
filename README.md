@@ -45,15 +45,22 @@ From the previous Section, we see that the model gets 132 features. Recalling th
 1. The first Layer has 132 Nodes 
 
 
+
 ## Results
 
-The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that the model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language model and made a mistake. 
+The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that the model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language model and made a mistake.
 
-The deep neural network achieved an accuracy of 99%. This shows the high capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
+The deep neural network achieved an accuracy of 99%. This shows the exceptional capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
 But of course, you have to take care of other factors too, viz overfitting, train-test split etc...
 
 
+
 ## Conclusion
+
+By comparing the two approaches, we conclude that deep neural network surpasses the N-gram approach for language detection in almost all aspects. With a decent GPU you could train the net in a short time and see the magic it does.
+
+For the N-gram approach, maybe including the unigrams too may help in correctly classifying even the short sentences in the data.
+
 
 
 ## References
