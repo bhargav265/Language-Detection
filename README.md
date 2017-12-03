@@ -25,6 +25,9 @@ Given below are the top 50 most frequent combination of bigrams and trigrams tha
 
 <strong>[of the, in the, to the, the european, on the, it is, the commission, that the, and the, for the, to be, ' s, with the, by the, european union, we are, like to, the european union, that we, is a, we have, member states, the council, in this, this is, i would, at the, is the, will be, is not, of this, i am, from the, there is, that is, of a, has been, of the european, which is, as a, would like, must be, do not, have been, we must, and i, should be, would like to, that it, european parliament]<strong>
 
+To reduce the computation we computed the language model for each language and serialized each one of them. Then, while testing we directly used them after deserializing.
+
+You can find the full Java code on the Github page.
 
 
 ## Deep Neural Network Model
@@ -43,5 +46,6 @@ From the previous Section, we see that the model gets 132 features. Recalling th
 1. Gyawali, Binod, Gabriela Ramírez-de-la-Rosa, and Thamar Solorio. "Native Language Identification: a Simple n-gram Based Approach." BEA@ NAACL-HLT. 2013.
 2. Carlos Ramisch. “N-gram models for language detection.”
 3. Kadri, Said, and Abdelouahab Moussaoui. "An effective method to recognize the language of a text in a collection of multilingual documents." Electronics, Computer and     	   Computation (ICECCO), 2013 International Conference on. IEEE, 2013.
+4. 
 
 
