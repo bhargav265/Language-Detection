@@ -69,9 +69,9 @@ We create 4 subfolders – original, cleaned, samples and train_test. The raw da
 In this step, we create text-cleaning procedures to clean the training data as well as the text that we want to classify, before the classification be trained DNN. Text cleaning procedures include removing XML tags, removing new lines, replacing many spaces with one space, etc.
 
 
-<img src="Images/cleaned_data1.png" width="500" align="middle">{: .center-image }
+<img src="Images/cleaned_data1.png" width="700" align="middle">{: .center-image }
 
-<img src="Images/cleaned_data.png" width="500" align="middle">{: .center-image }
+<img src="Images/cleaned_data2.png" width="700" align="middle">{: .center-image }
 <center><b> After cleaning the raw data</b></center>
 <br>
 
@@ -87,12 +87,12 @@ In this step, the input data is processed before being fed into the neural netwo
 
 Also, we scale the data to ensure that the optimization algorithm (variation of gradient descent) converges well. Thus, this step processes the input sequence and returns a sample input row for the DNN.
 
-<img src="Images/data_before_processing.png" width="500" align="middle">{: .center-image }
+<img src="Images/data_before_preprocessing.png" width="500" align="middle">{: .center-image }
 <center><b>Data before processing</b></center>
 <br>
 
-<img src="Images/data_after_processing1.png" width="500" align="middle">{: .center-image }
-<img src="Images/data_after_processing2.png" width="500" align="middle">{: .center-image }
+<img src="Images/data_after_preprocessing1.png" width="500" align="middle">{: .center-image }
+<img src="Images/data_after_preprocessing2.png" width="500" align="middle">{: .center-image }
 <center><b>Data after processing</b></center>
 <br>
 
