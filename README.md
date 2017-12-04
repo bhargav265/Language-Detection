@@ -1,3 +1,6 @@
+<style>
+{% include blogspots.css %}
+</style>
 ## Team
 Nikhil Thakur - MS CS  - (804946345)<br />
 Akshay Sharma - MS CS  - (504946035)<br />
@@ -40,6 +43,9 @@ For preprocessing the text, tokenization etc. we used the <a target="_blank" hre
 You can find the full Java code on the Github page. Feel free to use your choice of parameters for generating the language profiles.
 Awesome, if you could increase the accuracy!!!!.
 
+<img src="Images/N_gram_out.PNG" width="500" align="middle">{: .center-image }
+<center><b>Architecture using model.summary()</b></center>
+<br>
 
 
 ## Deep Neural Network Model
@@ -47,7 +53,38 @@ Awesome, if you could increase the accuracy!!!!.
 
 ### Architecture of the Neural Network
 From the previous Section, we see that the model gets 132 features. Recalling that there are 1400000 training examples and 350000 testing examples, we input the training examples into the Deep NN. We used Keras with Tensorflow to achieve this task. <br />
-1. The first Layer has 132 Nodes 
+After every layer we add a dropout which is a simple technique used to prevent overfitting.
+1. The first Layer has 132 input nodes connected with 500 hidden layer nodes.
+2. Next we insert 300 hidden layer nodes.
+3. After that, another 100 hidden layer nodes.
+4. At last, We put 7 output layer nodes for each of the 7 classes. 
+
+<img src="Images/architecture.PNG" width="500" align="middle">{: .center-image }
+<center><b>Architecture using model.summary()</b></center>
+<br>
+
+
+### Results of DNN
+
+Below we can see that accuracy is increasing as the number of epochs increase, but after 1 epoch the rate of increase is not high for the test set.
+
+
+<img src="Images/accuracy_vs_epoch.png" width="500" align="middle">{: .center-image }
+<center><b>Accuracy VS Epoch</b></center>
+<br>
+
+Below we have given the loss vs epoch plot. We can similarly say that, after the 1st epoch, loss is not reduced much because the model already learned sufficient parameters to classify.
+
+<img src="Images/Loss_vs_epoch.png" width="500" align="middle">{: .center-image }
+<center><b>Loss VS Epoch</b></center>
+<br>
+
+We show the prediction of sample sentences on various languages below.
+
+
+<img src="Images/testing.PNG" width="500" align="middle">{: .center-image }
+<center><b>Illustration of Test sentences</b></center>
+<br>
 
 
 
