@@ -50,11 +50,51 @@ Awesome, if you could increase the accuracy!!!!.
 
 ## Deep Neural Network Model
 
-The N-Gram model detects the language of the given text with an accuracy of 85% for a large input text. However, the as soon as the size of the input text decreases, the accuracy decreases. To tackle this problem, we use a deep neural network to identify the language of short text (140 characters e.g. tweets or SMS) with a high accuracy. 
+The N-Gram model detects the language of the given text with an accuracy of 85% for a large input text. However, the as soon as the size of the input text decreases, the accuracy decreases. To tackle this problem, we use a deep neural network to identify the language of a short text (140 characters e.g. tweets or SMS) with a high accuracy. 
+
+Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. Deep-learning networks are distinguished from the single-hidden-layer neural networks by their depth; that is, the number of node layers through which data passes in a multistep process of pattern recognition. Here, we use a 3-layer deep neural network to detect the language of a given text.
+ 
+We use the letter frequency approach for language detection using neural networks to achieve the highest possible accuracy. We count the occurrence frequency of all the possible letters in a sample text string. Assuming we have 7 languages, we exactly know which letters can occur in such texts. List of such letters is just sum of alphabets of all these languages, without letters repetitions. And for each letter in such alphabet, we can count its occurrence in a sample text.
 
 ### Raw Data Preparation
 
+Before we implement this neural network, we need to prepare the data. We use a big block of text for each language that we want to identify and sample randomly from each block during our DNN training, validation and test. For this project, we’ve used a European language dataset with 7 languages which are very similar to each other, and therefore challenging for language identification.
+
+We create 4 subfolders – original, cleaned, samples and train_test. The raw data is stored in the ‘original’ subfolder, the cleaned data would be stored in the ‘cleaned’ subfolder, ‘samples’ subfolder is for the files with text samples processed according to sampling procedure and the ‘train_test’ subfolder is for the file with np.arrays prepared for NN train and test data.
+
+<img src="Images/raw_data.png" width="500" align="middle">{: .center-image }
+<center><b>Raw Data</b></center>
+<br>
+
+In this step, we create text-cleaning procedures to clean the training data as well as the text that we want to classify, before the classification be trained DNN. Text cleaning procedures include removing XML tags, removing new lines, replacing many spaces with one space, etc.
+
+
+<img src="Images/cleaned_data1.png" width="500" align="middle">{: .center-image }
+
+<img src="Images/cleaned_data.png" width="500" align="middle">{: .center-image }
+<center><b> After cleaning the raw data</b></center>
+<br>
+
 ### Input Data Preparation
+
+In this step, the input data is processed before being fed into the neural network. Only the alpha characters and some special characters are needed from the input sequence to predict the output. We count the number of special characters in the input sample from a predefined alphabet set. Numbers and other special characters such as dot or coma aren’t considered as they are same in all the languages and hence, they don’t provide any additional information for the classification task.
+
+#####Processed Input Data:
+
+<img src="Images/processed_input_data.png" width="500" align="middle">{: .center-image }
+<center><b>Processed Input Data</b></center>
+<br>
+
+Also, we scale the data to ensure that the optimization algorithm (variation of gradient descent) converges well. Thus, this step processes the input sequence and returns a sample input row for the DNN.
+
+<img src="Images/data_before_processing.png" width="500" align="middle">{: .center-image }
+<center><b>Data before processing</b></center>
+<br>
+
+<img src="Images/data_after_processing1.png" width="500" align="middle">{: .center-image }
+<img src="Images/data_after_processing2.png" width="500" align="middle">{: .center-image }
+<center><b>Data after processing</b></center>
+<br>
 
 ### Architecture of the Neural Network
 From the previous Section, we see that the model gets 132 features. Recalling that there are 1400000 training examples and 350000 testing examples, we input the training examples into the Deep NN. We used Keras with Tensorflow to achieve this task. <br />
