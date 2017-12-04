@@ -50,6 +50,11 @@ Awesome, if you could increase the accuracy!!!!.
 
 ## Deep Neural Network Model
 
+The N-Gram model detects the language of the given text with an accuracy of 85% for a large input text. However, the as soon as the size of the input text decreases, the accuracy decreases. To tackle this problem, we use a deep neural network to identify the language of short text (140 characters e.g. tweets or SMS) with a high accuracy. 
+
+### Raw Data Preparation
+
+### Input Data Preparation
 
 ### Architecture of the Neural Network
 From the previous Section, we see that the model gets 132 features. Recalling that there are 1400000 training examples and 350000 testing examples, we input the training examples into the Deep NN. We used Keras with Tensorflow to achieve this task. <br />
