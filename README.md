@@ -43,7 +43,7 @@ For preprocessing the text, tokenization etc. we used the <a target="_blank" hre
 You can find the full Java code on the Github page. Feel free to use your choice of parameters for generating the language profiles.
 Awesome, if you could increase the accuracy!!!!.
 
-<img src="Images/N_gram_out.png" height = "500" width="700" align="middle">{: .center-image }
+<img src="Images/N_gram_out.png" height = "400" width="900" align="middle">{: .center-image }
 <center><b>Sample results using N-grams</b></center>
 <br>
 
