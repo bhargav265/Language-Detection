@@ -44,7 +44,7 @@ Awesome, if you could increase the accuracy!!!!.
 <center><b>Sample results using N-grams</b></center>
 <br>
 
-<img src="Images/N_gram_accuracy.png" height = "200" width="900" align="middle">{: .center-image }
+<img src="Images/N_gram_accuracy.png" height = "150" width="900" align="middle">{: .center-image }
 <center><b>Accuracy using N-grams</b></center>
 <br>
 
