@@ -10,14 +10,10 @@ Shraddha Manchekar - MS CS  - (004945217)<br />
 
 
 ## Abstract
-In natural language processing, language identification or language guessing is the problem of determining the language of the given content.
-There are several statistical approaches to language identification using different techniques to classify the data.
-
-
+In natural language processing, language identification or language guessing is the problem of determining the language of the given content. There are several statistical approaches to language identification using different techniques to classify the data. In this project, we have experimented this process using 2 basic approaches. Firstly, we tried an n-gram language model with a 1 nearest neighbour classification, but this was not performing well on short texts such as twitter tweets. Hence, to overcome this problem, we used a Deep Nueral Network to significantly improve the test accuracy. 
 
 ## Introduction
-In this project we have implemented 2 approaches to language identification. The first approach uses N-grams and the second uses deep neural network.
-The first approach has been implemented in Java and the second in Python. 
+
 
 
 
