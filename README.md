@@ -76,9 +76,9 @@ In this step, we create text-cleaning procedures to clean the training data as w
 
 In this step, the input data is processed before being fed into the neural network. Only the alpha characters and some special characters are needed from the input sequence to predict the output. We count the number of special characters in the input sample from a predefined alphabet set. Numbers and other special characters such as dot or coma aren’t considered as they are same in all the languages and hence, they don’t provide any additional information for the classification task.
 
-#####Processed Input Data:
+####Processed Input Data:
 
-<img src="Images/processed_input_data.png" width="500" align="middle">{: .center-image }
+<img src="Images/processed_input_data.png" height = "400" width="600" align="middle">{: .center-image }
 <center><b>Processed Input Data</b></center>
 <br>
 
