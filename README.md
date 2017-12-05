@@ -17,14 +17,13 @@ In natural language processing, language identification or language guessing is 
 
 There are several statistical approaches to language identification using different techniques to classify the data. One technique is to compare the compressibility of the text to the compressibility of texts in a set of known languages. This approach is known as mutual information based distance measure. The same technique can also be used to empirically construct family trees of languages which closely correspond to the trees constructed using historical methods. Mutual information based distance measure is essentially equivalent to more conventional model-based methods and is not generally considered to be either novel or better than simpler techniques. <br />
 
-For a more recent method, see Řehůřek and Kolkus (2009). This method can detect multiple languages in an unstructured piece of text and works robustly on short texts of only a few words: something that the n-gram approaches struggle with. <br />
+For a more recent method, see <a target ="_blank" href = "http://www.aclweb.org/anthology/W13-1729">Řehůřek and Kolkus (2009)</a>. This method can detect multiple languages in an unstructured piece of text and works robustly on short texts of only a few words: something that the n-gram approaches struggle with. <br />
 
 ## N-gram Model
 An n-gram is a contiguous sequence of n items from a given sequence of text or speech. It is an N-character slice of a longer string. Typically, the string is sliced into a set of overlapping N-grams.
 
 Given a novel document to be classified, the system computes the N-gram profile of this document (document profile) and compares the distance between this document profile and
 the language profiles for all the supported languages. The language profile is basically the top N of the list of bi-grams and tri-grams sorted by frequency. The top 300 or so N-grams are almost always highly correlated to the language. Thus, the language profile of a sporty document will be very similar to the language profile generated from a political document in the same language. This gives us confidence that if we train the system on the Declaration of Human Right we will still be able to classify documents to the correct language even though they might have completely different topics. Starting at around rank 300 or so, an N-gram frequency profile begins to become specific to the topic. For the training and testing we took the data from <a target="_blank" href = "http://www.statmt.org/europarl/">European Parliament Proceeding Parallel Corpus</a>. The dataset contains text data for 21 european languages.
-
 
 
 Given below are the top 50 most frequent combination of bigrams and trigrams for english language that we found from the training corpus.
