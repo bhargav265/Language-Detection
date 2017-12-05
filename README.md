@@ -44,7 +44,7 @@ Awesome, if you could increase the accuracy!!!!.
 <center><b>Sample results using N-grams</b></center>
 <br>
 
-<img src="Images/N_gram_accuracy.png" height = "300" width="900" align="middle">{: .center-image }
+<img src="Images/N_gram_accuracy.png" height = "200" width="900" align="middle">{: .center-image }
 <center><b>Accuracy using N-grams</b></center>
 <br>
 
@@ -82,7 +82,7 @@ In this step, the input data is processed before being fed into the neural netwo
 
 ###Processed Input Data:
 
-<img src="Images/processed_input_data.png" height = "300" width="800" align="middle">{: .center-image }
+<img src="Images/processed_input_data.png" height = "250" width="800" align="middle">{: .center-image }
 <center><b>Processed Input Data</b></center>
 <br>
 
