@@ -80,7 +80,7 @@ In this step, we create text-cleaning procedures to clean the training data as w
 
 In this step, the input data is processed before being fed into the neural network. Only the alpha characters and some special characters are needed from the input sequence to predict the output. We count the number of special characters in the input sample from a predefined alphabet set. Numbers and other special characters such as dot or coma aren’t considered as they are same in all the languages and hence, they don’t provide any additional information for the classification task.
 
-###Processed Input Data:
+#### Processed Input Data:
 
 <img src="Images/processed_input_data.png" height = "250" width="800" align="middle">{: .center-image }
 <center><b>Processed Input Data</b></center>
@@ -103,7 +103,7 @@ After every layer we add a dropout which is a simple technique used to prevent o
 1. The first Layer has 132 input nodes connected with 500 hidden layer nodes.
 2. Next we insert 300 hidden layer nodes.
 3. After that, another 100 hidden layer nodes.
-4. At last, We put 7 output layer nodes for each of the 7 classes. 
+4. We have 7 neurons in the output layer for each of the 7 classes. 
 
 <img src="Images/architecture.PNG" width="500" align="middle">{: .center-image }
 <center><b>Architecture using model.summary()</b></center>
@@ -136,7 +136,7 @@ We show the prediction of sample sentences on various languages below.
 
 ## Results
 
-The N-grams approach achieved an average accuracy of ~85% for the test set. It was observed that our prediction model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language profile and made a mistake.
+The N-grams approach achieved an average accuracy of ~89% for the test set. It was observed that our prediction model misclassified appreciable amount of sentences for which the length was less. It couldn't find a match in the language profile and made a mistake.
 
 The deep neural network achieved an accuracy of 99%. This shows the exceptional capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
 But of course, you have to take care of other factors too, viz overfitting, train-test split etc...
