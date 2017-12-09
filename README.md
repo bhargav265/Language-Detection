@@ -141,6 +141,17 @@ The N-grams approach achieved an average accuracy of ~89% for the test set. It w
 The deep neural network achieved an accuracy of 99%. This shows the exceptional capability of Deep learning. Just by adding 3-4 dense layers remarkable results were obtained.
 But of course, you have to take care of other factors too, viz overfitting, train-test split etc...
 
+One of the examples that was misclassified by N-gram model was "Bylo zde zmíněno, že toto soutěžení nebylo příliš velké, alespoň ne dosud" which is actually Czech but the model predicted it as Slovak because the languages are very similar. Below is the image that shows the incorrect language detected by the N-gram model:
+
+<img src="Images/DNNoutput.png" width="500" align="middle">{: .center-image }
+<center><b>Result of N-gram language detection model on Czech sentence</b></center>
+<br>
+
+However, our deep neural network is able to correctly detect the language as Czech.
+
+<img src="Images/Snip20171209_5.png" width="500" align="middle">{: .center-image }
+<center><b>Result of Deep Neural Network language detection model on Czech sentence</b></center>
+<br>
 
 
 ## Conclusion
