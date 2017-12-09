@@ -143,15 +143,15 @@ But of course, you have to take care of other factors too, viz overfitting, trai
 
 One of the examples that was misclassified by N-gram model was "Bylo zde zmíněno, že toto soutěžení nebylo příliš velké, alespoň ne dosud" which is actually Czech but the model predicted it as Slovak because the languages are very similar. Below is the image that shows the incorrect language detected by the N-gram model:
 
-<img src="Images/DNNoutput.png" align="middle">
-<center><b>Result of N-gram language detection model on Czech sentence</b></center>
-<br>
+<img src="Images/Snip20171209_5.png" align="middle">
+<center><b>Result of Deep Neural Network language detection model on Czech sentence</b></center>
+<br><br><br>
 
 However, our deep neural network is able to correctly detect the language as Czech.
 
-<img src="Images/Snip20171209_5.png" align="middle">
-<center><b>Result of Deep Neural Network language detection model on Czech sentence</b></center>
-<br>
+<img src="Images/DNNoutput.png" align="middle">
+<center><b>Result of N-gram language detection model on Czech sentence</b></center>
+<br><br>
 
 
 ## Conclusion
