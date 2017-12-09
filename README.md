@@ -63,7 +63,7 @@ Before we implement this neural network, we need to prepare the data. We use a b
 
 We create 4 subfolders – original, cleaned, samples and train_test. The raw data is stored in the ‘original’ subfolder, the cleaned data would be stored in the ‘cleaned’ subfolder, ‘samples’ subfolder is for the files with text samples processed according to sampling procedure and the ‘train_test’ subfolder is for the file with np.arrays prepared for NN train and test data.
 
-<img src="Images/raw_data.png" width="500" align="middle">{: .center-image }
+<img src="Images/raw_data.png" align="middle">{: .center-image }
 <center><b>Raw Data</b></center>
 <br>
 
@@ -143,13 +143,13 @@ But of course, you have to take care of other factors too, viz overfitting, trai
 
 One of the examples that was misclassified by N-gram model was "Bylo zde zmíněno, že toto soutěžení nebylo příliš velké, alespoň ne dosud" which is actually Czech but the model predicted it as Slovak because the languages are very similar. Below is the image that shows the incorrect language detected by the N-gram model:
 
-<img src="Images/Snip20171209_5.png" align="middle">
+<img src="Images/Snip20171209_5.png" align="middle">{: .center-image }
 <center><b>Result of N-gram language detection model on Czech sentence</b></center>
 <br><br><br>
 
 However, our deep neural network is able to correctly detect the language as Czech.
 
-<img src="Images/DNNoutput.png" align="middle">
+<img src="Images/DNNoutput.png" align="middle">{: .center-image }
 <center><b>Result of Deep Neural Network language detection model on Czech sentence</b></center>
 <br><br>
 
